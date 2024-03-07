@@ -1,0 +1,57 @@
+{
+  "name": "react-native-dari-datepicker",
+  "version": "1.0.0-beta.42",
+  "description": "A customizable calendar, time & month picker for React Native (including Dari Jalaali calendar & locale)",
+  "main": "src/index.js",
+  "scripts": {
+    "playground": "cd playground && react-native start"
+  },
+  "files": [
+    "src"
+  ],
+  "author": "Yaseen Akbari",
+  "homepage": "https://github.com/akbari4yaseen/react-native-dari-datepicker/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akbari4yaseen/react-native-dari-datepicker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/akbari4yaseen/react-native-dari-datepicker/issues"
+  },
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "react-native",
+    "react-native-datepicker",
+    "datepicker",
+    "calendar",
+    "react-native-calendar",
+    "react-native-calendars",
+    "react-native-dari-calendar",
+    "react-native-jalaali-calendar",
+    "time-picker",
+    "react-native-time-picker",
+    "month-picker",
+    "react-native-month-picker",
+    "dari",
+    "jalaali",
+    "react-native-jalaali",
+    "dari-calendar",
+    "customizable-datepicker"
+  ],
+  "dependencies": {
+    "moment-jalaali": "^0.9.2",
+    "prop-types": "^15.7.2"
+  },
+  "peerDependencies": {
+    "react-native": ">=0.59"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2",
+    "@babel/core": "^7.5.5",
+    "@babel/runtime": "^7.5.5",
+    "@react-native-community/eslint-config": "^0.0.5",
+    "eslint": "^6.3.0",
+    "metro-react-native-babel-preset": "^0.56.0"
+  }
+}
