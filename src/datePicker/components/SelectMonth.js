@@ -115,7 +115,7 @@ const SelectMonth = () => {
           onPress={() => !nextDisable && onSelectYear(-1)}>
           <Image
             source={require('../../assets/arrow.png')}
-            style={[style.arrow, style.leftArrow, nextDisable && style.disableArrow]}
+            style={[style.arrow,  nextDisable && style.disableArrow]}
           />
         </TouchableOpacity>
         <TextInput
@@ -137,7 +137,7 @@ const SelectMonth = () => {
           onPress={() => !prevDisable && onSelectYear(+1)}>
           <Image
             source={require('../../assets/arrow.png')}
-            style={[style.arrow, prevDisable && style.disableArrow]}
+            style={[style.arrow, style.leftArrow,  prevDisable && style.disableArrow]}
           />
         </TouchableOpacity>
       </View>
@@ -187,10 +187,10 @@ const styles = theme =>
       paddingHorizontal: 15,
       justifyContent: 'space-between',
       width: '80%',
-      flexDirection: 'row',
+      flexDirection: 'row-reverse',
     },
     reverseHeader: {
-      flexDirection: 'row-reverse',
+      flexDirection: 'row',
     },
     monthList: {
       flexWrap: 'wrap',

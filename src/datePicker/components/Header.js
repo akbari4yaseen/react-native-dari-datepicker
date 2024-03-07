@@ -53,7 +53,7 @@ const Header = ({changeMonth}) => {
         style={style.arrowWrapper}>
         <Image
           source={require('../../assets/arrow.png')}
-          style={[style.arrow, nextDisable && style.disableArrow]}
+          style={[style.arrow, style.leftArrow, nextDisable && style.disableArrow]}
         />
       </TouchableOpacity>
       <View style={style.monthYearContainer}>
@@ -120,7 +120,7 @@ const Header = ({changeMonth}) => {
         style={style.arrowWrapper}>
         <Image
           source={require('../../assets/arrow.png')}
-          style={[style.arrow, style.leftArrow, prevDisable && style.disableArrow]}
+          style={[style.arrow, prevDisable && style.disableArrow]}
         />
       </TouchableOpacity>
     </View>
@@ -131,10 +131,10 @@ const styles = (theme) =>
   StyleSheet.create({
     container: {
       alignItems: 'center',
-      flexDirection: 'row-reverse',
+      flexDirection: 'row',
     },
     reverseContainer: {
-      flexDirection: 'row',
+      flexDirection: 'row-reverse',
     },
     arrowWrapper: {
       padding: 20,
