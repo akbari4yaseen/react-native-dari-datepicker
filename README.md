@@ -7,6 +7,7 @@ import DatePicker from 'react-native-dari-datepicker';
 const FullUsageExample = () => {
   return (
     <DatePicker
+      isGregorian={false}
       options={{
         backgroundColor: '#090C08',
         textHeaderColor: '#FFA25B',
